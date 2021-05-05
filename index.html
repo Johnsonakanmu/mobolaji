@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3D fllip Login and Registration From - Tutorials</title>
+	<link rel="stylesheet" type="text/css" href="cac.css">
+</head>
+<body>
+	<div class="container">
+		<div class="card">
+			<div class="inner-box" id="card">
+				<div class="card-front">
+					<H2>LOGIN</H2>
+				<form>
+					<input type="email" class="input-box" placeholder="Your Email Id" required>
+					<input type="password" class="input-box" placeholder="password" required>
+					<button type="submit" class="submit-btn">Submit</button>
+					<input type="checkbox"><span>Remember Me</span>
+				</form>
+				<button type="button" class="btn" onclick="openRegister()">I'm New Here</button>
+				<a href="">Forgot password</a>
+				</div>
+
+				<div class="card-back">
+					<H2>REGISTER</H2>
+				<form>
+					<input type="text" class="input-box" placeholder="Your Name" required>
+					<input type="email" class="input-box" placeholder="Your Email Id" required>
+					<input type="password" class="input-box" placeholder="password" required>
+					<button type="submit" class="submit-btn">Submit</button>
+					<input type="checkbox"><span>Remember Me</span>
+				</form>
+				<button type="button" class="btn" onclick="openLogin()">I've an account</button>
+				<a href="">Forgot password</a>	
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var card = document.getElementById("card");
+
+		function openRegister(){
+			card.style.transform = "rotateY(-180deg)";
+		}
+
+		function openLogin(){
+			card.style.transform = "rotateY(0deg)";
+		}
+	</script>
+</body>
+</html>
